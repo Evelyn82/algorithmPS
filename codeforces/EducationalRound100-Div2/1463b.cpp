@@ -32,3 +32,34 @@ int main(){
     }
     return 0;
 }
+
+const int N = 1e5 + 5; //change it when needed
+int n, a[N];
+void solve() {
+	cin >> n;
+	int sum = 0;
+	for (int i = 0; i < n; i++) {
+		cin >> a[i];
+		sum += a[i];
+	}
+	int val1 = 0, val2 = 0;
+	for (int i = 0; i < n; i++) {
+		if (i % 2)val1 += abs(a[i] - 1);
+		else val2 += abs(a[i] - 1);
+	}
+	if (val1 * 2 <= sum) {
+		for (int i = 0; i < n; i++) {
+			if (i % 2)cout << 1 << " ";
+			else cout << a[i] << " ";
+		}
+
+	}
+	else {
+		for (int i = 0; i < n; i++) {
+			if (i % 2 == 0)cout << 1 << " ";
+			else cout << a[i] << " ";
+		}
+	}
+	cout << endl;
+
+}

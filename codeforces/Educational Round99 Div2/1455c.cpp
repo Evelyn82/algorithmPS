@@ -11,9 +11,10 @@ int main(){
 		int x, y;
 		cin>>x>>y;
 		cout<<x-1<<' '<<y<<'\n';
-				
+		
+		// Get your score optimized for you
 		/*
-    WA code
+		WA Code
 		if(x == y) cout<<0<<' '<<1<<'\n';
 		else if(x > y) cout<<x-y<<' '<<1<<'\n';
 		else cout<<0<<' '<<y-x+1<<'\n';

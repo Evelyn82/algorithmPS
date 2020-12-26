@@ -12,7 +12,8 @@ int main(){
 		cin>>x>>y;
 		cout<<x-1<<' '<<y<<'\n';
 		
-		// Get your score optimized for you
+		// Get your score optimized for you.
+		// also, it outputs cumulatives scores.
 		/*
 		WA Code
 		if(x == y) cout<<0<<' '<<1<<'\n';

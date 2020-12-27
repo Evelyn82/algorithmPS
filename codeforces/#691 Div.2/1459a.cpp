@@ -18,6 +18,7 @@ int main() {
 			if (r[i] > b[i]) ret1++;
 			else if (r[i] < b[i])ret2++;
 		}
+		
 		if (ret1 > ret2) cout << "RED\n";
 		else if (ret1 < ret2) cout << "BLUE\n";
 		else cout << "EQUAL\n";

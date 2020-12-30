@@ -33,14 +33,13 @@ int main(){
         }
     }
     
-    d[0]=1; // start point
+    d[0]=1; // initial setting
     
     for(int n=0;n<N;++n){
         vector<pair<int, int>> v;
         for(int h=0;h<=H;++h){
             for(int b=0;b<bcks[n].size();++b){
                 if(d[h]!=0 && h+bcks[n][b]<=H){
-                    // Push all cases
                     v.push_back(make_pair(h+bcks[n][b], d[h]));
                 }
             }

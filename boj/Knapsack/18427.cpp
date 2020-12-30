@@ -35,6 +35,8 @@ int main(){
     
     d[0]=1; // initial setting
     
+    // 이전 사람들의 결과에 나의 경우를 추가하는 방식 -> 맨위 for문은 사람 기준
+    // 즉, 나의 블록을 중복사용하는 경우는 발생되지 않는다.
     for(int n=0;n<N;++n){
         vector<pair<int, int>> v;
         for(int h=0;h<=H;++h){

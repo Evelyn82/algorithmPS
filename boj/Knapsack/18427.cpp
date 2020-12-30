@@ -20,13 +20,16 @@ int main(){
         getline(cin, s);
         
         int num=0;
-        for(int j=0;j<=s.size();++j){
+        for(int j=0;j<=s.size();++j) { 
+            /*
             if(j==s.size()) bcks[i].push_back(num);
             else if(s[j]==' ') {
                 bcks[i].push_back(num);
                 num=0;
             }
             else num=(num*10)+(int)(s[j]-'0');
+            */
+            if(j==0 || s[j]==' ') bcks[i].push_back(stoi(&s[j]));
         }
     }
     

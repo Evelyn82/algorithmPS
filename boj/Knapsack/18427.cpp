@@ -10,7 +10,10 @@ int main(){
     ios_base::sync_with_stdio(false);
     cin.tie(nullptr); cout.tie(nullptr);
     int N,M,H; cin>>N>>M>>H;
+    
+    // using getline
     cin.ignore();
+    
     bcks.resize(N);
     for(int i=0;i<N;++i){
         string s;

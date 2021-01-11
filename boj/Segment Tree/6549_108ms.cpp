@@ -1,10 +1,9 @@
-//
+//  108ms
 //  6549.cpp
 //  open contest
 //
 //  Created by Evelyn 💚 on 2021/01/11.
 //
-
 
 #include <iostream>
 #include <vector>

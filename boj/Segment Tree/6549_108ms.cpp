@@ -1,3 +1,4 @@
+//  https://www.acmicpc.net/blog/view/12
 //  108ms
 //  6549.cpp
 //  open contest

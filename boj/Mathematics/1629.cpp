@@ -13,6 +13,6 @@ ll solve(int a, int b, int c){
 }
 int main(){
     int a,b,c; cin>>a>>b>>c;
-    // a로 전달시 WA
+    // a로 전달시 WA -> line8 if(b==1) return a%c;로 작성시 a자체를 전달해도 AC
     cout<<solve(a%c,b,c)<<'\n';
 }

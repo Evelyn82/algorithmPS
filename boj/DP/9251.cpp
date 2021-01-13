@@ -35,15 +35,13 @@ int solve(int a, int b){
     
     if(a<s1.length()&& b<s2.length() && s1[a]==s2[b]) return ref=solve(a+1, b+1)+1;
     
-    // 316ms
-    /*
-    for(int k=b;k<s2.length();++k){
-        if(s1[a]==s2[k]) ref=max(ref, solve(a+1, k+1)+1);
-    }
-    ref=max(ref, solve(a+1,b));
-     */
+    // 316ms(line 39~42)
+    //for(int k=b;k<s2.length();++k){
+    //    if(s1[a]==s2[k]) ref=max(ref, solve(a+1, k+1)+1);
+    //}
+    //ref=max(ref, solve(a+1,b));
     
-    // 12ms
+    // 12ms(Change line 39~42)
     ref=max(solve(a+1,b), solve(a, b+1));
     return ref;
 }

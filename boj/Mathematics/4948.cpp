@@ -19,8 +19,6 @@ int main(){
         }
     }
     
-    // idx==21787 -> LTE?
-    
     int n;
     while(cin>>n){
         if(n==0) break;

@@ -2,7 +2,6 @@
 4
 2 1 3 1
 */
-
 #include <iostream>
 #include <map>
 #include <algorithm>

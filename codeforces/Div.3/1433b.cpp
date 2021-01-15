@@ -18,7 +18,6 @@ int main() {
 				if (prev != -1) ans += abs(i - prev - 1);
 				prev = i;
 			}
-		}
-		cout << ans << '\n';
+		}cout << ans << '\n';
 	}
 }

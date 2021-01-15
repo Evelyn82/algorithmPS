@@ -51,7 +51,6 @@ int main() {
 		else {
 			if (ans1 == -1) cout << ans2 + 1;
 			else cout << ans1 + 1;
-		}
-		cout << '\n';
+		}cout << '\n';
 	}
 }

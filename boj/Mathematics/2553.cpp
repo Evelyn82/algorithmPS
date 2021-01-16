@@ -4,6 +4,8 @@
 using namespace std;
 
 typedef long long ll;
+
+// TLE from 1e3 (decreasing)
 const ll DIV=1e10;
 int main(){
 	ios_base::sync_with_stdio(false);

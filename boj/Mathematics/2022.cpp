@@ -19,7 +19,7 @@ int main(){
 	while(high-low>0.000001){
 		double mid=(low+high)/2.0;
 		if(solve(mid)>=c){
-			ret=mid;
+		    ret=mid;
 		    low=mid;
 		}
 		else high=mid;

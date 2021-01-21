@@ -53,6 +53,10 @@ int main(){
     
     Node* node=new Node();
     string s;
+    /*
+     char input[32];
+    while (!cin.getline(input, 31).eof()) {
+    */
     while(getline(cin, s)){
         if(s.length()==0) break;
         node->insert(s.c_str());

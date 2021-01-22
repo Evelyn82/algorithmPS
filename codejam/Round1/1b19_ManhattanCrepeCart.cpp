@@ -1,16 +1,15 @@
 //#include <bits stdc++.h>
-
 #include <stdio.h>
 #include <iostream>
 #include <memory.h>
 #include <algorithm>
 using namespace std;
-#define MAXQ 101010
+#define MAXQ 100001
 
 int P,Q;
 int dx[MAXQ], dy[MAXQ];
 int solve(int* arr){
-    int ret=-1, cnt=0, mx=-10101001;
+    int ret=-1, cnt=0, mx=-98765421;
     for(int i=0;i<=Q;++i){
         cnt+=arr[i];
         if(mx<cnt){

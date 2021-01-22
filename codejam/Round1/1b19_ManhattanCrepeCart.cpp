@@ -1,8 +1,9 @@
+//#include <bits stdc++.h>
+
 #include <stdio.h>
 #include <iostream>
 #include <memory.h>
 #include <algorithm>
-//#include <bits stdc++.h>
 using namespace std;
 #define MAXQ 101010
 

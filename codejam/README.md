@@ -2,7 +2,7 @@
 
 ### codejam 2020     
 * Qualification Round
-* Round 1A     https://github.com/evelyn82ny/algorithmPS/blob/main/codejam/Round1/1b20_Expogo.cpp
+* Round 1A     
   - [x] [Pattern Matching](https://github.com/evelyn82ny/algorithmPS/blob/main/codejam/Round1/1a20_PatternMatching.cpp)      
   - [ ] Pascal Walk     
   - [ ] Square Dance       

@@ -9,4 +9,5 @@
   [5 13433](https://www.acmicpc.net/problem/13433)       
   
 * SCPC    
+  - Qualification Round 
   [Pipe](https://www.codeground.org/practice/practiceProblemViewNew)

@@ -1,7 +1,7 @@
 ## Geometry
 
 ### Circle
-* BOJ<br>
+* BOJ
   - Gold<br>
   [7869](https://www.acmicpc.net/problem/7869)<br>
   - Platinum<br>

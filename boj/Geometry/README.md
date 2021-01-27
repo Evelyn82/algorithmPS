@@ -3,10 +3,10 @@
 ### Circle
 * BOJ<br>
   - Gold<br>
-  [7869](https://www.acmicpc.net/problem/7869)<br><br>
+  [7869](https://www.acmicpc.net/problem/7869)<br>
   
   - Platinum<br>
-  [13433](https://www.acmicpc.net/problem/13433)<br><br>
+  [13433](https://www.acmicpc.net/problem/13433)<br>
   
 * SCPC<br>
   - Qualification Round<br>

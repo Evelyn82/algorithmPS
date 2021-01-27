@@ -1,13 +1,21 @@
 ## Geometry
 
 ### Circle
-* BOJ     
-  - Gold      
-  [5 7869](https://www.acmicpc.net/problem/7869)   
+* BOJ<br>
+  - Gold<br>
+  [7869](https://www.acmicpc.net/problem/7869)<br><br>
   
-  - Platinum       
-  [5 13433](https://www.acmicpc.net/problem/13433)       
+  - Platinum<br>
+  [13433](https://www.acmicpc.net/problem/13433)<br><br>
   
-* SCPC    
-  - Qualification Round     
-  [Pipe](https://www.codeground.org/practice/practiceProblemViewNew)
+* SCPC<br>
+  - Qualification Round<br>
+  [Pipe](https://www.codeground.org/practice/practiceProblemViewNew)<br><br><br>
+  
+  
+### Convex Hull(Graham's Scan)<br>  
+  - Gold<br>
+  [1708](https://www.acmicpc.net/problem/1708)<br>
+  - Platinum<br>
+  [6850](https://www.acmicpc.net/problem/6850)<br>
+  

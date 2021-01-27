@@ -8,6 +8,6 @@ SCPC Qualification Round [Pipe](https://www.codeground.org/practice/practiceProb
   
   
 ### Convex Hull(Graham's Scan)
-boj Gold [1708](https://www.acmicpc.net/problem/1708)<br>
-boj Platinum [6850](https://www.acmicpc.net/problem/6850)<br>
+boj [1708](https://www.acmicpc.net/problem/1708)(Gold)<br>
+boj [6850](https://www.acmicpc.net/problem/6850)(Platinum)<br>
   

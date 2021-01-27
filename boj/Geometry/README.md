@@ -13,7 +13,8 @@
   [Pipe](https://www.codeground.org/practice/practiceProblemViewNew)<br><br><br>
   
   
-### Convex Hull(Graham's Scan)<br>  
+### Convex Hull(Graham's Scan)<br>
+* BOJ<br>
   - Gold<br>
   [1708](https://www.acmicpc.net/problem/1708)<br>
   - Platinum<br>

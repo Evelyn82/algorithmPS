@@ -2,14 +2,13 @@
 
 ### Circle
 * BOJ<br>
-  - Gold<br>
+- Gold<br>
   [7869](https://www.acmicpc.net/problem/7869)<br>
-  
-  - Platinum<br>
+ - Platinum<br>
   [13433](https://www.acmicpc.net/problem/13433)<br>
   
 * SCPC<br>
-  - Qualification Round<br>
+- Qualification Round<br>
   [Pipe](https://www.codeground.org/practice/practiceProblemViewNew)<br><br><br>
   
   

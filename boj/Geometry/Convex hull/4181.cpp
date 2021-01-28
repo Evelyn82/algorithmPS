@@ -6,12 +6,13 @@ using namespace std;
 using ll=long long;
 using pll=pair<ll, ll>;
 
+const int MX=1e5+2;
 struct Point{
     ll x,y;
     ll p,q;
-    Point() : x(0), y(0), p(0), q(0){}
+    //Point() : x(0), y(0), p(0), q(0){}
     Point(ll _x, ll _y) : x(_x), y(_y), p(0), q(0) {}
-};
+}v[MX];
 bool cmp(const Point &a, const Point &b){
     if(b.q*a.p != a.q*b.p) return b.q*a.p > a.q*b.p;
     if(a.y!=b.y) return a.y<b.y;
@@ -27,11 +28,12 @@ bool ccw(const Point &a, const Point &b, const Point &c){
 int main(){
     int n; scanf("%d", &n);
    
-    vector<Point> v;
+    int cnt=0;
+   // vector<Point> v;
     ll a, b; char c;
     for(int i=0;i<n;++i){
         scanf("%lld%lld%c", &a, &b, &c);
-        if(c=='Y') v.push_back(Point(a,b));
+        if(c=='Y') {v[cnt]=Point(a,b), cnt++;}
     }
     sort(v.begin(), v.end(), cmp);
     for(int i=0;i<v.size();++i){

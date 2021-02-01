@@ -44,6 +44,13 @@ int main(){
                 (x<f[mid].s ? high : low)=mid;
             }fpos=low;
         }
+        
+        /*
+        int fpos=upper_bound(f.begin(), f.end(), h[i])-f.begin();
+        fpos--;
+        dp[i]=f[fpos].a*h[i] + f[fpos].b;
+        */
+        
         dp[i]=f[fpos].a*x + f[fpos].b;
     }
     

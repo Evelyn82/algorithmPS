@@ -4,5 +4,7 @@
   
 ## Geometry
   * CCW<br>
-  * Convex hull<br>
+  * Convex Hull<br>
+  * Convex Hull Trick(optimaization)<br>
+  
  

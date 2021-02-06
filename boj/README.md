@@ -6,6 +6,7 @@
   * CCW<br>
   * Convex Hull<br>
   * Convex Hull Trick(optimaization)<br>
+  * Rotating Calipers(Shamos's algorithm)<br>
   * Sweeping<br>
   
  

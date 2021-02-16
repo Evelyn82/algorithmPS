@@ -2,19 +2,32 @@
 ## SAMSUNG COllEGIATE PROGRAMMING CUP      
 
 ### 6. 2020
-  * Qualification Round1    
-    - [x] Diet    
-    - [x] Card Game     
-    - [ ] Ladder Game   
+ * Qualification Round1
+  - [x] 다이어트<br>
+  - [x] 카드 게임<br>   
+  - [ ] 사다리 게임<br>
     
-     
+ * Qualification Round2
+  - [ ] 실력 맞추기<br>
+  - [ ] 고구마<br>
   
 ### 5. 2019
-  * Qualification Round 1      
-    - [ ] Up and Down    
-    - [ ] Ball rolling    
-    - [ ] Jump     
-    - [x] [Pipe](https://github.com/evelyn82ny/algorithmPS/blob/main/scpc/5_2019/Qualification%20Round/1d.cpp)    
-    - [ ] Growing Cells   
-
+ * Qualification Round1
+  - [ ] 오르락 내리락<br>
+  - [ ] 공 굴리기<br>
+  - [ ] 점프<br>
+  - [x] 파이프<br>
+    
+ * Qualification Round2
+  - [ ] 소수 수열<br>
+  - [ ] 유사도<br>
+   
+### 4. 2018
+ * Qualification Round1
+  - [ ] 버스 타기<br>
+  - [ ] 회문인 수의 합<br>
+  - [ ] 우주정거장<br>
   
+ * Qualification Round2
+  - [ ] Quick Sort<br>
+  - [ ] 메모지<br>

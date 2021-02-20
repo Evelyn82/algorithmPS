@@ -18,6 +18,8 @@ int main(){
             }
         }
         memset(d, 0, sizeof d);
+        
+        // knapsack
         int idx=0;
         for(int i=1;i<=n;++i){
             for(int j=1;j<=k;++j){

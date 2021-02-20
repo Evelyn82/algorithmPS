@@ -1,6 +1,7 @@
-<t1>CodeJam</t1>    
+<h2>CodeJam</h2>    
 
-<t2>codejam 2020</t2>     
+<h3>codejam 2020</h3>
+
 * Qualification Round
   - [x] Vestigium<br>
   - [ ] Nesting Depth<br>
@@ -16,7 +17,8 @@
   - [ ] Join the Ranks<br>
 * Round 1C
 
-<t2>codejam 2019</t2>    
+<h3>codejam 2019</h3>
+
 * Qualification Round
   - [ ] Foregone solution<br>
   - [ ] You can go your own way<br>

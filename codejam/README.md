@@ -1,23 +1,30 @@
-## CodeJam    
+<t1>CodeJam</t1>    
 
-### codejam 2020     
+<t2>codejam 2020</t2>     
 * Qualification Round
+  - [x] Vestigium<br>
+  - [ ] Nesting Depth<br>
+  - [ ] Parenting partnering returns<br>
+  - [ ] ESAb ATAd<br>
 * Round 1A     
-  - [x] [Pattern Matching](https://github.com/evelyn82ny/algorithmPS/blob/main/codejam/Round1/1a20_PatternMatching.cpp)      
-  - [ ] Pascal Walk     
-  - [ ] Square Dance       
+  - [x] Pattern Matching<br>
+  - [ ] Pascal Walk<br>
+  - [ ] Square Dance<br>
 * Round 1B      
-  - [x] [Expogo](https://github.com/evelyn82ny/algorithmPS/blob/main/codejam/Round1/1b20_Expogo.cpp)      
-  - [ ] Blindfolded Bullseye     
-  - [ ] Join the Ranks     
+  - [x] Expogo<br>
+  - [ ] Blindfolded Bullseye<br>
+  - [ ] Join the Ranks<br>
 * Round 1C
 
-
-### codejam 2019    
+<t2>codejam 2019</t2>    
 * Qualification Round
+  - [ ] Foregone solution<br>
+  - [ ] You can go your own way<br>
+  - [ ] Cryptopangrams<br>
+  - [ ] Dat Bae<br>
 * Round 1A
 * Round 1B     
-  - [x] [Manhattan Crepe Cart](https://github.com/evelyn82ny/algorithmPS/blob/main/codejam/Round1/1b19_ManhattanCrepeCart.cpp)     
-  - [ ] Draupnir       
-  - [ ] Fair Fight    
+  - [x] Manhattan Crepe Cart<br>
+  - [ ] Draupnir<br>  
+  - [ ] Fair Fight<br>
 * Round 1C

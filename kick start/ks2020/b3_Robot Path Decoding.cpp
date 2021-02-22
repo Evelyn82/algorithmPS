@@ -21,7 +21,7 @@ pll solve(int low, int high){
             x=(x+(int)(s[i]-'0')*subF.first)%DIV;
             y=(y+(int)(s[i]-'0')*subF.second)%DIV;
             i=endIdx-1;
-            continue;
+            //continue;
         }
         else if(s[i]=='N') y=(y+DIV-1)%DIV;
         else if(s[i]=='S') y=(y+DIV+1)%DIV;

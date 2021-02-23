@@ -5,7 +5,7 @@
 * Qualification Round
   - [x] Vestigium<br>
   - [x] Nesting Depth<br>
-  - [ ] Parenting partnering returns<br>
+  - [x] Parenting partnering returns<br>
   - [ ] ESAb ATAd<br>
   - [ ] Indicium<br>
 * Round 1A     

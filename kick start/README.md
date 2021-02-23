@@ -4,7 +4,7 @@
 
 - [x] Allocation<br>
 - [x] Plates<br>
-- [ ] Workout<br>
+- [x] Workout<br>
 - [ ] Bundling<br>
 
 <h3>Round B</h3>

@@ -8,7 +8,7 @@ struct Node{
     Node* child[26];
     int h, cnt, terminal;
     Node() : terminal(0), h(0), cnt(0){
-        for(int i=0;i<26;++i) child[i]=nullptr;
+        for(int i=0;i<26;++i) child[i]=NULL;
     }
     ~Node(){
         for(int i=0;i<26;++i) if(child[i]) delete child[i];
@@ -21,7 +21,7 @@ struct Node{
             return;
         }
         int next=(int)(*key-'A');
-        if(child[next]==nullptr) child[next]=new Node();
+        if(child[next]==NULL) child[next]=new Node();
         child[next]->insert(key+1, depth+1);
     }
     ll query(int k){

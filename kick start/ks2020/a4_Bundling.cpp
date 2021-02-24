@@ -7,7 +7,7 @@ using ll=long long;
 struct Node{
     Node* child[26];
     int h, cnt, terminal;
-    Node() : terminal(0), h(0), cnt(0){
+    Node() : h(0), cnt(0), terminal(0){
         for(int i=0;i<26;++i) child[i]=NULL;
     }
     ~Node(){
@@ -15,7 +15,7 @@ struct Node{
     }
     
     void insert(const char* key, int depth){
-        h=depth; cnt++;
+        this->h=depth; this->cnt++;
         if(*key==0) {
             terminal++;
             return;
@@ -24,22 +24,18 @@ struct Node{
         if(child[next]==NULL) child[next]=new Node();
         child[next]->insert(key+1, depth+1);
     }
-    ll query(int k){
-        if(this->cnt<k) return 0;
-        
-        ll ret=(terminal/k)*h; bool flag=false;
-        for(int i=0;i<26;++i){
-            if(child[i]==NULL) continue;
-            if(child[i]->cnt>=k){
-                ret=ret+(ll)child[i]->query(k);
-                flag=true;
-            }
-        }
-        
-        if(!terminal && !flag) ret += (ll)(cnt/k)*h;
-        return ret;
-    }
+    
 };
+int query(int k, Node* root, int& ans){
+    int rem=root->terminal;
+    for(int i=0;i<26;++i){
+        Node* next=root->child[i];
+        if(next==NULL) continue;
+        rem+=query(k, next, ans);
+    }
+    ans+=(rem/k)*root->h;
+    return rem%k;
+}
 int main(){
     ios_base::sync_with_stdio(false);
     cin.tie(nullptr); cout.tie(nullptr);
@@ -51,7 +47,10 @@ int main(){
             string s; cin>>s;
             root->insert(s.c_str(), 0);
         }
-        cout<<"Case #"<<tc<<": "<<root->query(k)<<'\n';
+        
+        int ans=0;
+        query(k, root, ans);
+        cout<<"Case #"<<tc<<": "<<ans<<'\n';
         delete root;
     }
 }

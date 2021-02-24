@@ -27,7 +27,7 @@ struct Node{
     ll query(int k){
         if(this->cnt<k) return 0;
         
-        ll ret=0; bool flag=false;
+        ll ret=(terminal/k)*h; bool flag=false;
         for(int i=0;i<26;++i){
             if(child[i]==NULL) continue;
             if(child[i]->cnt>=k){
@@ -36,9 +36,8 @@ struct Node{
             }
         }
         
-        ll ret1=(ll)(terminal/k)*h;
-        //if(!flag) return ret1;
-        return ret+ret1;
+        if(!terminal && !flag) ret += (ll)(cnt/k)*h;
+        return ret;
     }
 };
 int main(){

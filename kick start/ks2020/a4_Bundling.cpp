@@ -35,10 +35,10 @@ struct Node{
                 flag=true;
             }
         }
-
-        if(!flag) return h;
-        int plus=(terminal>=k?h:0);
-        return ret+(ll)plus;
+        
+        ll ret1=(ll)(terminal/k)*h;
+        //if(!flag) return ret1;
+        return ret+ret1;
     }
 };
 int main(){

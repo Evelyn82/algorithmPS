@@ -13,3 +13,10 @@
 - [x] Bus Routes<br>
 - [x] Robot Path Decoding<br>
 - [ ] Wandering Robot<br>
+
+<h3>Round C</h3>
+
+- [x] Countdown<br>
+- [ ] Stable Wall<br>
+- [ ] Perfect Subarray<br>
+- [ ] Candies<br>

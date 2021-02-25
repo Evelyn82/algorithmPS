@@ -10,7 +10,7 @@
   - [ ] Indicium<br>
 * Round 1A     
   - [x] Pattern Matching<br>
-  - [x] Pascal Walk<br>
+  - [x] [Pascal Walk](https://m.blog.naver.com/PostView.nhn?blogId=dsyun96&logNo=221903054035&navType=tl)<br>
   - [ ] Square Dance<br>
 * Round 1B      
   - [x] Expogo<br>

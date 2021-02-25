@@ -4,7 +4,10 @@
 #define all(x) x.begin(), x.end()
 #define fastio ios_base::sync_with_stdio(false); cin.tie(nullptr); cout.tie(nullptr)
 using namespace std;
-const int MXN=51;
+
+// 2^30=1,073,741,824 -> 2^(31-1) : 31row
+const int MXN=32;
+
 using ll=long long;
 using pii=pair<int,int>;
 using vpii=vector<pii>;

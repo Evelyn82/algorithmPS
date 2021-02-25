@@ -1,55 +1,61 @@
 #include <iostream>
-#include <vector>
 #include <algorithm>
+#include <vector>
+#define all(x) x.begin(), x.end()
+#define fastio ios_base::sync_with_stdio(false); cin.tie(nullptr); cout.tie(nullptr)
 using namespace std;
+const int MXN=51;
+using ll=long long;
+using pii=pair<int,int>;
+using vpii=vector<pii>;
+using vll=vector<ll>;
 
-struct Path{
-    bool flag;
-    int x, y;
-    Path(){}
-    Path(bool _flag, int _x, int _y):flag(_flag), x(_x), y(_y){}
-};
-int pascal[51][51];
-pair<int,int> pattern[]={{1, 0}, {0, 1}, {1,1}, {0, -1}};
+int pascal[MXN][MXN];
+ll pSum[MXN*2];
+vpii path;
 void init(){
-    for(int i=1;i<32;++i){
-        for(int j=1;j<=i;++j){
-            if(j==1 || j==i) pascal[i][j]=1;
+    for(int i=0;i<MXN;++i){
+        for(int j=0;j<=i;++j){
+            if(j==0||i==j) pascal[i][j]=1;
             else pascal[i][j]=pascal[i-1][j-1]+pascal[i-1][j];
         }
     }
-}
-void solve(int n){
-    vector<Path> v;
-    v.push_back(Path(true, 1, 1));
     
-    int sum=1, idx=-1;
-    while(sum<n){
-        int nx=v.back().x, ny=v.back().y;
-        idx=(idx+1)%4;
-        nx+=pattern[idx].first; ny+=pattern[idx].second;
-        v.push_back(Path(true, nx, ny));
-        sum+=pascal[nx][ny];
+    path.push_back(make_pair(0,0));
+    pSum[0]=1;
+    int x=1, y=0, idx=1;
+    while(1){
+        path.push_back(make_pair(x,y));
+        pSum[idx]=pSum[idx-1]+pascal[x][y];
+        if(pSum[idx]>1e9) break;
+        if(idx&1){
+            // deleteable
+            if(x&1) y++;
+            else y--;
+        }
+        else{
+            if(x&1) y++;
+            x++;
+        }idx++;
     }
-    // del
-    int diff=sum-n;
-    for(int i=(int)v.size()-1;i>=0;--i){
-        if(pascal[v[i].x][v[i].y]<=diff) {
-            v[i].flag=false;
-            diff-=pascal[v[i].x][v[i].y];
-        }if(diff==0) break;
-    }
-    for(Path i : v) if(i.flag==true) cout<<i.x<<' '<<i.y<<'\n';
 }
 int main(){
-    ios_base::sync_with_stdio(false);
-    cin.tie(nullptr); cout.tie(nullptr);
-    int t; cin>>t;
+    fastio;
     init();
+    int t; cin>>t;
     for(int tc=1;tc<=t;++tc){
         int n; cin>>n;
         cout<<"Case #"<<tc<<":\n";
-        solve(n);
-        // 2^30=1,073.741,824 -> x<=31
+        
+        auto lwr=lower_bound(pSum, pSum+63, n)-pSum;
+        ll diff=pSum[lwr]-(ll)n;
+        vpii ret;
+        for(int i=lwr;i>=0;--i){
+            ll var=pSum[i]-pSum[i-1];
+            if(i&1 && var<=diff) diff-=var;
+            else ret.push_back(path[i]);
+        }
+        reverse(all(ret));
+        for(pii& i : ret) cout<<i.first+1<<' '<<i.second+1<<'\n';
     }
 }

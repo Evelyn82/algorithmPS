@@ -10,7 +10,7 @@
   - [ ] Indicium<br>
 * Round 1A     
   - [x] Pattern Matching<br>
-  - [ ] Pascal Walk<br>
+  - [x] Pascal Walk<br>
   - [ ] Square Dance<br>
 * Round 1B      
   - [x] Expogo<br>

@@ -6,7 +6,7 @@
 #include <algorithm>
 using namespace std;
 
-void dfs(int n, bool flag, string& s, vector<bool>& vst, vector<bool>& act, const vector<vector<int>>& adj){
+void dfs(int n, bool& flag, string& s, vector<bool>& vst, vector<bool>& act, const vector<vector<int>>& adj){
     vst[n]=true;
     act[n]=true;
     for(int nxt : adj[n]){
@@ -33,8 +33,9 @@ int main(){
         for(int j=0;j<c;++j){
             for(int i=1;i<r;++i){
                 int from=v[i][j]-'A', to=v[i-1][j]-'A';
-                adj[from].push_back(to);
                 st.insert(from); st.insert(to);
+                if(from==to) continue;
+                adj[from].push_back(to);
             }
         }
         

@@ -10,8 +10,8 @@
  * Qualification Round2
   - [ ] 실력 맞추기<br>
   - [ ] 고구마<br>
-  - [x] 아르바이트<br>
-  
+  - [x] 아르바이트 -> [2ms](https://evenharder.github.io/algo/scpc-2020-round-2/)<br>
+    
 ### 5. 2019
  * Qualification Round1
   - [ ] 오르락 내리락<br>

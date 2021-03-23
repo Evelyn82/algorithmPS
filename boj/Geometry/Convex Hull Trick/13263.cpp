@@ -1,42 +1,42 @@
-#include <cstdio>
+#include <iostream>
+#include <vector>
 #include <algorithm>
 using namespace std;
 using ll=long long;
-const int MX=1e5+1;
 
-ll h[MX], cost[MX];
-struct LinearFunc{
-    ll a, b;
-    double s;
-    LinearFunc():LinearFunc(1,0){}
-    LinearFunc(ll a1, ll b1):a(a1), b(b1), s(0){}
+struct Linear{
+    ll p,q;
+    double xpos;
 };
-
-inline double cross(const LinearFunc &f, const LinearFunc &g){
-    return (g.b-f.b)/(f.a-g.a);
+bool operator<(const ll x, const Linear other){
+    return x<other.xpos;
+}
+double cross(const Linear& a, const Linear& b){
+    return (double)(b.q-a.q)/(double)(a.p-b.p);
 }
 int main(){
-    int n; scanf("%d", &n);
-    for(int i=0;i<n;++i) scanf("%lld", h+i);
-    for(int i=0;i<n;++i) scanf("%lld", cost+i);
+    ios_base::sync_with_stdio(false);
+    cin.tie(nullptr); cout.tie(nullptr);
+    int n; cin>>n;
+    vector<int> h(n), cost(n);
+    for(int i=0;i<n;++i) cin>>h[i];
+    for(int i=0;i<n;++i) cin>>cost[i];
     
-    ll dp[MX]={0,};
-    LinearFunc f[MX];
-    int top=0;
+    vector<Linear> f;
+    vector<ll> dp(n+1,0);
     for(int i=1;i<n;++i){
-        LinearFunc g(cost[i-1], dp[i-1]);
-        while(top>0){
-            g.s=cross(f[top-1], g);
-            if(f[top-1].s<g.s) break;
-            --top; // pop
-        }
-        f[top++]=g;
-       
-        ll x=h[i];
-        int fpos=top-1;
-        int low, high, mid;
+        Linear g = {cost[i-1], dp[i-1], 0};
+        while(!f.empty()){
+            g.xpos=cross(g,f.back());
+            if(f.back().xpos<g.xpos) break;
+            f.pop_back();
+        }f.push_back(g);
         
-        // O(N*logN)
+        int pos=upper_bound(f.begin(), f.end(), h[i])-f.begin();
+        pos--;
+        
+       // upper_bound implementation
+        /*
         if(x<f[top-1].s){
             low=0, high=top-1;
             while(low+1<high){
@@ -44,37 +44,16 @@ int main(){
                 (x<f[mid].s ? high : low)=mid;
             }fpos=low;
         }
-        
-        /*
-        int fpos=upper_bound(f.begin(), f.end(), h[i])-f.begin();
-        fpos--;
-        dp[i]=f[fpos].a*h[i] + f[fpos].b;
         */
         
-        dp[i]=f[fpos].a*x + f[fpos].b;
-    }
-    
-    
-    // height(arr h)가 단조 증가이므로 이전 선분의 검사가 필요없고, 새로 생긴 선분의 검사만 하면된다.
-    // O(N*logN) -> O(N)
-    /*
-    O(N)
-    int top=0, fpos=0;
-    for(int i=1;i<n;++i){
-        LinearFunc g(cost[i-1], dp[i-1]);
-        while(top>0){
-            g.s=cross(f[top-1], g);
-            if(f[top-1].s<g.s) break;
-            
-            if(--top==fpos) --fpos;
-        }
-        f[top++]=g;
+        // height(arr h)가 단조 증가이므로 이전 선분의 검사가 필요없고, 새로 생긴 선분의 검사만 하면된다.
+        // O(N*logN) -> O(N)
+        /*
+        if(idx>=f.size()) idx=f.size()-1;      // idx = 0 (init)
+        while(idx+1<f.size() && f[idx+1].xpos<h[i]) idx++;
+        dp[i]=f[idx].p*h[i] + f[idx].q;
+        */
         
-        ll x=h[i];
-        while(fpos+1<top && f[fpos+1].s<x) ++fpos;
-        dp[i]=f[fpos].a*x + f[fpos].b;
-    }
-    */
-    
-    printf("%lld\n", dp[n-1]);
+        dp[i]=f[pos].p*h[i]+f[pos].q;
+    }cout<<dp[n-1]<<'\n';
 }

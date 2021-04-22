@@ -16,10 +16,4 @@
 
 <img width="800" alt="스크린샷 2021-04-22 오전 11 40 40" src="https://user-images.githubusercontent.com/54436228/115647918-9ad80100-a35f-11eb-9cb4-64726c02c7bc.png">
 
-
-cycle의 유무를 확인하기 위해서 2가지의 visited check가 필요하다.
-> 0 -> 1 -> 8 -> 1 -> 0
-> 0 -> 7 -> 4 -> 1 순서로 탐색한다고 하자.
-
-<img width="500" alt="스크린샷 2021-04-22 오전 11 23 29" src="https://user-images.githubusercontent.com/54436228/115646514-3ddb4b80-a35d-11eb-8c35-308e81936bc6.png">
-
+**내가 탐색하고자 하는 노드가 나에게로 온 경로에서 이미 방문이 한 경우 cycle임을 처리한다.**<br>

@@ -1,5 +1,7 @@
 <h2>동굴 탐험</h2>
 
+https://programmers.co.kr/learn/courses/30/lessons/67260
+
 - path 배열로 0을 기준으로 단방향 트리를 만든다.<br>
 - 단방향 트리에 order 배열을 단방향으로 추가한다.<br>
 
@@ -16,4 +18,7 @@
 
 <img width="800" alt="스크린샷 2021-04-22 오전 11 40 40" src="https://user-images.githubusercontent.com/54436228/115647918-9ad80100-a35f-11eb-9cb4-64726c02c7bc.png">
 
+> 해당 그림은 프로그래머스 카카오 문제에서 사용
+
 **내가 탐색하고자 하는 노드가 나에게로 온 경로에서 이미 방문이 한 경우 cycle임을 처리한다.**<br>
+

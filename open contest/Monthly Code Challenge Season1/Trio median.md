@@ -1,4 +1,5 @@
 <h2>트리 트리오 중간값</h2>
+
 [문제](https://programmers.co.kr/learn/courses/30/lessons/68937)
 
 <h4>반례</h4>

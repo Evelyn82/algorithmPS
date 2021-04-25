@@ -23,10 +23,10 @@ map의 value는 고객이 아니라 key값인 방 번호를 기준으로 다음�
 
 1번방이 가리키는 2번방으로 배정하며 되고 그 결과는 다음과 같다.<br>
 
-<img width="350" alt="스크린샷 2021-04-26 오전 1 46 50" src="https://user-images.githubusercontent.com/54436228/116001830-934f7b00-a631-11eb-8f15-9430ae8e2c5f.png">
+<img width="400" alt="스크린샷 2021-04-26 오전 1 46 50" src="https://user-images.githubusercontent.com/54436228/116001830-934f7b00-a631-11eb-8f15-9430ae8e2c5f.png">
 
 <h3>E 고객은 이미 배정이 완료된 3번방을 원한다.</h3>
-<img width="350" alt="스크린샷 2021-04-26 오전 1 39 02" src="https://user-images.githubusercontent.com/54436228/116001700-b75e8c80-a630-11eb-9f40-0f26df0c8770.png">
+<img width="400" alt="스크린샷 2021-04-26 오전 1 39 02" src="https://user-images.githubusercontent.com/54436228/116001700-b75e8c80-a630-11eb-9f40-0f26df0c8770.png">
 
 findRoom 함수를 통해 3번방이 가리키는 4번방, 4번방이 가리키는 5번방을 다시 3번방이 가리키도록 한다.<br>
 즉, 고객 E는 3번방 다음으로 배정받을 수 있는 5번방을 배정하면 되고 그 결과는 다음과 같다.<br>

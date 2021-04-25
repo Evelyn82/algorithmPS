@@ -1,6 +1,6 @@
 <h2>트리 트리오 중간값</h2>
 
-[문제](https://programmers.co.kr/learn/courses/30/lessons/68937)
+문제 : https://programmers.co.kr/learn/courses/30/lessons/68937
 
 
 - 탐색 1 : 임의의 노드 1에서 가장 먼 노드를 찾는다 : 노드4

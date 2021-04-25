@@ -6,7 +6,7 @@
 - [**동굴 탐험**](https://github.com/evelyn82/PS/blob/main/kakao/20%20intern/Cave%20exploration.md)
 - 모두 0으로 만들기
 
-<h2>Binary Search</h2>
+<h2>Union Find</h2>
 
 - **호텔방 배정**
 

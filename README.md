@@ -11,7 +11,7 @@
 
 <h2>Union Find</h2>
 
-- kakao 호텔방 배정
+- [kakao 호텔방 배정](https://github.com/evelyn82/PS/blob/main/kakao/19%20intern/hotel%20room%20assignment.md)
 
 ***
 

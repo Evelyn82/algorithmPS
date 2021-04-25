@@ -1,5 +1,7 @@
 <h2>호텔 방 배정</h2>
 
+문제 : https://programmers.co.kr/learn/courses/30/lessons/64063
+
 코드작성보다 구현 방법을 찾는 게 중요하다는 것을 다시 한번 깨닫게 해준 문젝다.<br>
 알고리즘 처음 시작했을 땐 무작정 코드짜면서 고쳐나갔는데, 문제가 어려워지면서 잘못된 방법이라고 깨달았다.<br>
 이 문제도 방법 찾는 데 오래 걸렸지만, 코드 작성은 10분도 안 걸렸다.<br>
@@ -26,7 +28,7 @@ map의 value는 고객이 아니라 key값인 방 번호를 기준으로 다음�
 <img width="400" alt="스크린샷 2021-04-26 오전 1 46 50" src="https://user-images.githubusercontent.com/54436228/116001830-934f7b00-a631-11eb-8f15-9430ae8e2c5f.png">
 
 <h3>E 고객은 이미 배정이 완료된 3번방을 원한다.</h3>
-<img width="400" alt="스크린샷 2021-04-26 오전 1 39 02" src="https://user-images.githubusercontent.com/54436228/116001700-b75e8c80-a630-11eb-9f40-0f26df0c8770.png">
+<img width="350" alt="스크린샷 2021-04-26 오전 1 39 02" src="https://user-images.githubusercontent.com/54436228/116001700-b75e8c80-a630-11eb-9f40-0f26df0c8770.png">
 
 findRoom 함수를 통해 3번방이 가리키는 4번방, 4번방이 가리키는 5번방을 다시 3번방이 가리키도록 한다.<br>
 즉, 고객 E는 3번방 다음으로 배정받을 수 있는 5번방을 배정하면 되고 그 결과는 다음과 같다.<br>

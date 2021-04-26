@@ -19,14 +19,13 @@ map의 value는 고객이 아니라 **key값인 방 번호를 기준으로 다�
 <h3>A, B, C 고객은 자신이 원하는 방에 배정 받을 수 있다.</h3>
 <img width="400" alt="스크린샷 2021-04-26 오전 1 38 40" src="https://user-images.githubusercontent.com/54436228/116001640-5a62d680-a630-11eb-843f-493ef6d3d1d6.png">
 
-1, 3, 4는 이미 배정된 방이고 1이 가리키는 2번방은 **1번방을 배정받고 싶은 고객에겐 2번방을 배정한다**라는 의미이다.<br>
-
+1, 3, 4는 이미 배정된 방이고 1이 가리키는 2번방은 **1번방을 배정받고 싶은 고객에겐 2번방을 배정한다**라는 의미이다.<br><br>
 
 <h3>D 고객은 이미 배정이 완료된 1번방을 원한다.</h3>
 
 1번방이 가리키는 2번방으로 배정하며 되고 그 결과는 다음과 같다.<br>
 
-<img width="400" alt="스크린샷 2021-04-26 오전 1 46 50" src="https://user-images.githubusercontent.com/54436228/116001830-934f7b00-a631-11eb-8f15-9430ae8e2c5f.png">
+<img width="400" alt="스크린샷 2021-04-26 오전 1 46 50" src="https://user-images.githubusercontent.com/54436228/116001830-934f7b00-a631-11eb-8f15-9430ae8e2c5f.png"><br>
 
 
 <h3>E 고객은 이미 배정이 완료된 3번방을 원한다.</h3>
@@ -35,7 +34,7 @@ map의 value는 고객이 아니라 **key값인 방 번호를 기준으로 다�
 findRoom 함수를 통해 3번방이 가리키는 4번방, 4번방이 가리키는 5번방을 다시 3번방이 가리키도록 한다.<br>
 즉, 고객 E는 3번방 다음으로 배정받을 수 있는 5번방을 배정하면 되고 그 결과는 다음과 같다.<br>
 
-<br><img width="408" alt="스크린샷 2021-04-26 오전 1 47 20" src="https://user-images.githubusercontent.com/54436228/116001827-8cc10380-a631-11eb-84ae-fb2ba49c131b.png">
+<br><img width="408" alt="스크린샷 2021-04-26 오전 1 47 20" src="https://user-images.githubusercontent.com/54436228/116001827-8cc10380-a631-11eb-84ae-fb2ba49c131b.png"><br>
 
 
 <h3>F 고객은 이미 배정이 완료된 1번방을 원한다.</h3>

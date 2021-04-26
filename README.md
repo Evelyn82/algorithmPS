@@ -2,17 +2,26 @@
 
 - [pgms 트리 트리오 중간값](https://github.com/evelyn82/PS/blob/main/open%20contest/Monthly%20Code%20Challenge%20Season1/Trio%20median.md)
 - [19581 두 번째 트리의 지름](https://github.com/evelyn82/PS/blob/main/boj/Tree/19581.md)
-- [kakao 동굴 탐험](https://github.com/evelyn82/PS/blob/main/kakao/20%20intern/Cave%20exploration.md)
 - pgms 모두 0으로 만들기
 
 <h2>Binary Seach</h2>
 
 - 1300 K번째 수
 
-<h2>Union Find</h2>
-
-- [kakao 호텔방 배정](https://github.com/evelyn82/PS/blob/main/kakao/19%20intern/hotel%20room%20assignment.md)
+- 12896 스크루지 민호
 
 ***
 
-- 12896 스크루지 민호
+<h2>kakao</h2>
+
+<h3>21 blind</h3>
+
+- 메뉴 리뉴얼
+
+<h3>20 intern</h3>
+
+- [kakao 동굴 탐험](https://github.com/evelyn82/PS/blob/main/kakao/20%20intern/Cave%20exploration.md)
+
+<h3>19 intern</h3>
+
+- [kakao 호텔방 배정](https://github.com/evelyn82/PS/blob/main/kakao/19%20intern/hotel%20room%20assignment.md)

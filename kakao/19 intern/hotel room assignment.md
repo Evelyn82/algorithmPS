@@ -14,7 +14,7 @@ A ~ F손님이 원하는 방 번호는 다음과 같다.<br>
 map<long long, long long> mp;
 ```
 map의 key는 방 번호이다.<br>
-map의 value는 고객이 아니라 key값인 방 번호를 기준으로 다음으로 사용가능한 방 번호이다.<br>
+map의 value는 고객이 아니라 **key값인 방 번호를 기준으로 다음으로 사용가능한 방 번호**이다.<br>
 
 <h3>A, B, C 고객은 자신이 원하는 방에 배정 받을 수 있다.</h3>
 <img width="400" alt="스크린샷 2021-04-26 오전 1 38 40" src="https://user-images.githubusercontent.com/54436228/116001640-5a62d680-a630-11eb-843f-493ef6d3d1d6.png">

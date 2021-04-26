@@ -1,52 +1,48 @@
 #include <string>
 #include <vector>
-#include <set>
 #include <map>
+#include <unordered_map>
 #include <algorithm>
 using namespace std;
 
-bool d[20][32];
-set<string> st;
+unordered_map<string , int> ump;
+void combination(string s, string m, int sz, int idx){
+    if(sz==0) {
+        string menu=m;
+        sort(menu.begin(), menu.end());
+        ump[menu]++;
+        return;
+    }
+    if(idx==s.size()) return;
+    
+    combination(s, m+s[idx], sz-1, idx+1);
+    combination(s, m, sz, idx+1);
+}
 vector<string> solution(vector<string> orders, vector<int> course) {
-   for(int i=0;i<orders.size();++i){
-        for(char& c : orders[i]){
-            d[i][c-'A']=true;
-        }
-    }
-    
-    vector<bool> cou(11, false);
-    for(int& i : course) cou[i]=true;
-    
-    map<string, int> candi[11];
-    for(int i=0;i<orders.size();++i){
-        string s="";
-        for(int j=i+1;j<orders.size();++j){
-            s="";
-            for(int k=0;k<32;++k){
-                if(d[i][k] && d[j][k]){
-                    s+=(k+65);
-                    if(s.size()>1 && cou[s.size()]) candi[s.size()][s]++;
-                }
-            }
-        }
-    }
-    
-    vector<vector<pair<int,string>>> tmpAns(11);
-    map<string, int>::iterator iter;
+    string tmp="";
     for(int& i : course){
-        for(iter=candi[i].begin();iter!=candi[i].end();++iter){
-            if(tmpAns[i].empty()) tmpAns[i].push_back(make_pair(iter->second,iter->first));
-            else {
-                if(tmpAns[i].back().first<=iter->second) {
-                while(!tmpAns[i].empty() && tmpAns[i].back().first<iter->second)tmpAns[i].pop_back();
-                tmpAns[i].push_back(make_pair(iter->second, iter->first));
-                }
-            }
+        for(string& s : orders){
+            tmp="";
+            combination(s, tmp, i, 0);
         }
     }
-    vector<string> ans;
-    for(int& i : course) {
-        for(pair<int, string>& j : tmpAns[i]) ans.push_back(j.second);
-    }sort(ans.begin(), ans.end());
-    return ans;
+    int sz;
+    vector<int> mxCnt(11,0);
+    vector<vector<string>> candi(11);
+    unordered_map<string, int>::iterator iter;
+    for(iter=ump.begin();iter!=ump.end();++iter){
+        sz=iter->first.size();
+        if(iter->second>1 && mxCnt[sz]<=iter->second){
+            if(mxCnt[sz]<iter->second) candi[sz].clear();
+            candi[sz].push_back(iter->first);
+            mxCnt[sz]=iter->second;
+        }
+    }
+    vector<string> answer;
+    for(int& i : course){
+        for(string& s : candi[i]){
+            answer.push_back(s);
+        }
+    }sort(answer.begin(), answer.end());
+    return answer;
 }

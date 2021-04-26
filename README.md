@@ -17,7 +17,7 @@
 <h3>21 blind</h3>
 
 - 메뉴 리뉴얼
-- 광고 삽입
+- [광고 삽입](https://github.com/evelyn82/Problem-Solving/blob/main/kakao/21%20blind/Ad%20insertion.md)
 - 카드 짝 맞추기
 - 매출 하락 최소화
 

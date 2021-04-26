@@ -20,8 +20,8 @@
 
 <h3>20 intern</h3>
 
-- [kakao 동굴 탐험](https://github.com/evelyn82/PS/blob/main/kakao/20%20intern/Cave%20exploration.md)
+- [동굴 탐험](https://github.com/evelyn82/PS/blob/main/kakao/20%20intern/Cave%20exploration.md)
 
 <h3>19 intern</h3>
 
-- [kakao 호텔방 배정](https://github.com/evelyn82/PS/blob/main/kakao/19%20intern/hotel%20room%20assignment.md)
+- [호텔방 배정](https://github.com/evelyn82/PS/blob/main/kakao/19%20intern/hotel%20room%20assignment.md)

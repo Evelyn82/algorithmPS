@@ -16,7 +16,7 @@
 - [x] 괄호 변환
 - [x] [자물쇠와 열쇠](https://github.com/evelyn82/Problem-Solving/blob/main/kakao/20%20blind/lock%20and%20key.md)
 - [ ] 기둥과 보 설치
-- [ ] 외벽 점검
+- [x] 외벽 점검
 - [ ] 블록 이동하기
 - [x] [가사 검색](https://github.com/evelyn82/Problem-Solving/blob/main/kakao/20%20blind/Lyrics%20search.md)
 

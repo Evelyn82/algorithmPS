@@ -18,7 +18,7 @@
 - [ ] 기둥과 보 설치
 - [ ] 외벽 점검
 - [ ] 블록 이동하기
-- [x] 가사 검색
+- [x] [가사 검색](https://github.com/evelyn82/Problem-Solving/blob/main/kakao/20%20blind/Lyrics%20search.md)
 
 <h3>20 intern</h3>
 

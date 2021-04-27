@@ -14,7 +14,7 @@
 
 - [ ] 문자열 압축
 - [x] 괄호 변환
-- [ ] 자물쇠와 열쇠
+- [x] [자물쇠와 열쇠](https://github.com/evelyn82/Problem-Solving/blob/main/kakao/20%20blind/lock%20and%20key.md)
 - [ ] 기둥과 보 설치
 - [ ] 외벽 점검
 - [ ] 블록 이동하기

@@ -29,3 +29,5 @@ weak 5와 6을 처리할 수 있다는 의미이다.<br>
 
 <img width="650" alt="스크린샷 2021-04-27 오후 9 28 10" src="https://user-images.githubusercontent.com/54436228/116241809-43db8d00-a7a0-11eb-9812-73582c5e085c.png">
 
+위와 같이 dist 1, 2, 3은 weak6만 처리 가능하지 다음으로 넘어갈 수 없다.<br>
+upper_bound를 사용하면 dist4가 weak6부터 처리하도록 설정된다.<br>

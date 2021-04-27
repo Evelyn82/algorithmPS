@@ -1,3 +1,5 @@
+> [카카오 기출 바로가기](https://github.com/evelyn82/Problem-Solving/tree/main/kakao)
+
 <h2>Tree</h2>
 
 - [pgms 트리 트리오 중간값](https://github.com/evelyn82/PS/blob/main/open%20contest/Monthly%20Code%20Challenge%20Season1/Trio%20median.md)
@@ -10,21 +12,3 @@
 
 - 12896 스크루지 민호
 
-***
-
-<h2>kakao</h2>
-
-<h3>21 blind</h3>
-
-- [메뉴 리뉴얼](https://github.com/evelyn82/Problem-Solving/blob/main/kakao/21%20blind/menu%20renewal.md)
-- [광고 삽입](https://github.com/evelyn82/Problem-Solving/blob/main/kakao/21%20blind/Ad%20insertion.md)
-- 카드 짝 맞추기
-- 매출 하락 최소화
-
-<h3>20 intern</h3>
-
-- [동굴 탐험](https://github.com/evelyn82/PS/blob/main/kakao/20%20intern/Cave%20exploration.md)
-
-<h3>19 intern</h3>
-
-- [호텔방 배정](https://github.com/evelyn82/PS/blob/main/kakao/19%20intern/hotel%20room%20assignment.md)

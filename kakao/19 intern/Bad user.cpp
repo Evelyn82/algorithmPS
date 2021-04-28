@@ -14,8 +14,6 @@ void dfs(const vector<string>& user_id, const vector<string>& banned_id, int bid
     
     for(int i=0;i<user_id.size();++i){
         if(vst[i]) continue;
-        
-        // equal check
         if(banned_id[bidx].size() != user_id[i].size()) continue;
         
         int j;

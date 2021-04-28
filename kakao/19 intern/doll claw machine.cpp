@@ -22,7 +22,8 @@ int solution(vector<vector<int>> board, vector<int> moves) {
     int answer=0;
     for(int& i : moves){
         if(v[i-1].empty()) continue;
-        if(!ans.empty() && ans.back()==v[i-1].back()) { ans.pop_back(); answer++;
+        if(!ans.empty() && ans.back()==v[i-1].back()) {
+            ans.pop_back(); answer++;
         }
         else ans.push_back(v[i-1].back());
         v[i-1].pop_back();

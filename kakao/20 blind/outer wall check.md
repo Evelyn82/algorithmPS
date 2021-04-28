@@ -1,5 +1,7 @@
 <h2>외벽 점검</h2>
 
+> 문제 : https://programmers.co.kr/learn/courses/30/lessons/60062
+
 - weak의 길이는 최대 15 : 15개의 지점에서 탐색 시작을 시작한다.
 - dist의 길이는 최대 8 : 8!(=40,320)개의 경우의 수이므로 next_permutation을 이용하여 모든 경우를 다 적용시켜본다.
 

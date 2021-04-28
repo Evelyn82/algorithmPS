@@ -12,3 +12,9 @@
 
 - user_id는 최대 8개
 - banned_id는 최대 8개로 user_id 개수이하의 값만 주어진다.
+
+범위가 작으니 brute force를 적용시킨다.<br>
+각각의 banned_id에 일치하는 id를 찾기 위해 모든 user_id와 비교한다. : O(n^2) = 8 * 8<br>
+동일 목록을 카운트 하지 않기 위해 visited 처리를 해준다.<br>
+
+banned_id에 일치하는 목록을 bit 연산자로 차리하고, 모든 부분이 매칭되면 set에 insert하여 count 한다.<br>

@@ -22,15 +22,18 @@
 
 **내가 탐색하고자 하는 노드가 나에게로 온 경로에서 이미 방문이 한 경우 cycle임을 처리한다.**<br>
 
+
 ```C++
 bool isCycle(int n){
-    nowVst[n]=true;
+    nowVst[n]=true; // 현재 탐색하는 경로에 속한다.
+    
     for(pair<int, bool>& next : adj[n]){
-        if(!next.second) continue;
-        if(nowVst[next.first]) return true;
-        if(isCycle(next.first)) return true;
+        if(nowVst[next.first]) return true; // 다음 노드 현재 경로에 벌써 속해있다면 cycle이므로 바로 return
+        if(isCycle(next.first)) return true; // 현재 경로에 속하지 않았다면 next를 기준으로 탐색 시작
     }
-    nowVst[n]=false;
+    nowVst[n]=false; // 현재 경로의 탐색을 종료하므로 false
     return false;
 }
 ```
+
+위의 코드로 cycle을 찾아낼 수 있지만 효율성 테스트에서 TLE를 받는다.<br>

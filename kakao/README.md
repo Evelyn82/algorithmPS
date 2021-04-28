@@ -33,5 +33,5 @@
 - [ ] 크레인 인형뽑기 게임
 - [ ] 튜플
 - [x] [불량 사용자](https://github.com/evelyn82/Problem-Solving/blob/main/kakao/19%20intern/Bad%20user.md)
-- [ ] 징검다리 
+- [x] 징검다리 
 - [x] [호텔방 배정](https://github.com/evelyn82/PS/blob/main/kakao/19%20intern/hotel%20room%20assignment.md)

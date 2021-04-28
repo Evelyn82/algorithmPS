@@ -1,4 +1,6 @@
 <h2>광고 삽입</h2>
+ 
+> 문제 : https://programmers.co.kr/learn/courses/30/lessons/72414
 
 동영상 재생시간은 최대 **99시간 59분 59초**이다.<br>
 

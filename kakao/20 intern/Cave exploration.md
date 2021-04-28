@@ -22,3 +22,15 @@
 
 **내가 탐색하고자 하는 노드가 나에게로 온 경로에서 이미 방문이 한 경우 cycle임을 처리한다.**<br>
 
+```C++
+bool isCycle(int n){
+    nowVst[n]=true;
+    for(pair<int, bool>& next : adj[n]){
+        if(!next.second) continue;
+        if(nowVst[next.first]) return true;
+        if(isCycle(next.first)) return true;
+    }
+    nowVst[n]=false;
+    return false;
+}
+```

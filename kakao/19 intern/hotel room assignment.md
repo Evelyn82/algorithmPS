@@ -1,6 +1,6 @@
 <h2>호텔 방 배정</h2>
 
-문제 : https://programmers.co.kr/learn/courses/30/lessons/64063
+> 문제 : https://programmers.co.kr/learn/courses/30/lessons/64063
 
 코드작성보다 구현 방법을 찾는 게 중요하다는 것을 다시 한번 깨닫게 해준 문제다.<br>
 알고리즘 처음 시작했을 땐 무작정 코드짜면서 고쳐나갔는데, 문제가 어려워지면서 잘못된 방법이라고 깨달았다.<br>

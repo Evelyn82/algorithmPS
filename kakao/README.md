@@ -25,7 +25,7 @@
 - [x] 키패드 누르기
 - [ ] 수식 최대화
 - [ ] 보석 쇼핑
-- [ ] 경주로 건설
+- [x] 경주로 건설
 - [x] [동굴 탐험](https://github.com/evelyn82/PS/blob/main/kakao/20%20intern/Cave%20exploration.md)
 
 <h3>19 intern</h3>

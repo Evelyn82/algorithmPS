@@ -22,8 +22,16 @@
 
 <h3>20 intern</h3>
 
+- [ ] 키패드 누르기
+- [ ] 수식 최대화
+- [ ] 보석 쇼핑
+- [ ] 경주로 건설
 - [x] [동굴 탐험](https://github.com/evelyn82/PS/blob/main/kakao/20%20intern/Cave%20exploration.md)
 
 <h3>19 intern</h3>
 
+- [ ] 크레인 인형뽑기 게임
+- [ ] 튜플
+- [ ] 불량 사용자
+- [ ] 징검다리 
 - [x] [호텔방 배정](https://github.com/evelyn82/PS/blob/main/kakao/19%20intern/hotel%20room%20assignment.md)

@@ -30,7 +30,7 @@
 
 <h3>19 intern</h3>
 
-- [ ] 크레인 인형뽑기 게임
+- [x] 크레인 인형뽑기 게임
 - [ ] 튜플
 - [x] [불량 사용자](https://github.com/evelyn82/Problem-Solving/blob/main/kakao/19%20intern/Bad%20user.md)
 - [x] 징검다리 

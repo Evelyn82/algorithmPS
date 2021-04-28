@@ -1,5 +1,7 @@
 <h2>자물쇠와 열쇠</h2>
 
+> 문제 : https://programmers.co.kr/learn/courses/30/lessons/60059 
+
 key와 lock의 최대 크기는 20인 2차원 배열이며, 크기가 작으니 brute force 를 적용한다.<br>
 
 열쇠의 일부분이 자물쇠의 범위 밖에 있는채로 일치해도 정답이므로 **자물쇠를 margin**시킨다.<br>

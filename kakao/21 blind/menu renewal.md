@@ -1,5 +1,7 @@
 <h2>메뉴 리뉴얼</h2>
 
+> 문제 : https://programmers.co.kr/learn/courses/30/lessons/72411
+
 어렵게 생각하지말고, 주어진 범위를 보고 brute force로 풀 수 있다고 파악 가능한지 평가하는 문제같다.<br>
 처음엔 brute force를 생각하지 못해 각 주문마다 &연산으로 겹치는 부분을 메뉴를 생성해나는 방식으로 풀었다.<br>
 하지만 범위가 적기때문에 brute force로 해결가능하다.<br>

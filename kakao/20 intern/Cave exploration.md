@@ -1,6 +1,6 @@
 <h2>동굴 탐험</h2>
 
-https://programmers.co.kr/learn/courses/30/lessons/67260
+> 문제 : https://programmers.co.kr/learn/courses/30/lessons/67260
 
 - path 배열로 0을 기준으로 단방향 트리를 만든다.<br>
 - 단방향 트리에 order 배열을 단방향으로 추가한다.<br>

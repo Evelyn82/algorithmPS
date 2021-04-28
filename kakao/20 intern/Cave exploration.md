@@ -25,13 +25,13 @@
 
 ```C++
 bool isCycle(int n){
-    nowVst[n]=true; // 현재 탐색하는 경로에 속한다.
+    nowPath[n]=true; // 현재 탐색하는 경로에 속한다.
     
     for(pair<int, bool>& next : adj[n]){
-        if(nowVst[next.first]) return true; // 다음 노드 현재 경로에 벌써 속해있다면 cycle이므로 바로 return
+        if(nowPath[next.first]) return true; // 다음 노드 현재 경로에 벌써 속해있다면 cycle이므로 바로 return
         if(isCycle(next.first)) return true; // 현재 경로에 속하지 않았다면 next를 기준으로 탐색 시작
     }
-    nowVst[n]=false; // 현재 경로의 탐색을 종료하므로 false
+    nowPath[n]=false; // 현재 경로의 탐색을 종료하므로 false
     return false;
 }
 ```

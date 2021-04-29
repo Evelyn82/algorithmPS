@@ -20,6 +20,16 @@
 - [ ] 블록 이동하기
 - [x] [가사 검색](https://github.com/evelyn82/Problem-Solving/blob/main/kakao/20%20blind/Lyrics%20search.md)
 
+<h3>19 blind</h3>
+
+- [ ] 오픈채팅방
+- [ ] 실패율
+- [ ] 후보키
+- [ ] 길 찾기 게임
+- [ ] 매칭 점수
+- [ ] 무지의 먹방 라이브
+- [ ] 블록 게임
+
 <h3>20 intern</h3>
 
 - [x] 키패드 누르기

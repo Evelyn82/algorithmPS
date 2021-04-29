@@ -4,7 +4,7 @@
 
 - [x] 신규아이디 추천
 - [x] [메뉴 리뉴얼](https://github.com/evelyn82/Problem-Solving/blob/main/kakao/21%20blind/menu%20renewal.md)
-- [x] 순위 검색
+- [x] [순위 검색](https://github.com/evelyn82/Problem-Solving/blob/main/kakao/21%20blind/rank%20search.md)
 - [ ] 카드 짝 맞추기
 - [x] 합승 택시 요금
 - [x] [광고 삽입](https://github.com/evelyn82/Problem-Solving/blob/main/kakao/21%20blind/Ad%20insertion.md)

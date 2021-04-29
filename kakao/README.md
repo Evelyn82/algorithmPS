@@ -1,6 +1,6 @@
 <h2>kakao</h2>
 
-<h3>21 blind</h3>
+<h3>21 blind recruitment</h3>
 
 - [x] 신규아이디 추천
 - [x] [메뉴 리뉴얼](https://github.com/evelyn82/Problem-Solving/blob/main/kakao/21%20blind/menu%20renewal.md)
@@ -10,7 +10,7 @@
 - [x] [광고 삽입](https://github.com/evelyn82/Problem-Solving/blob/main/kakao/21%20blind/Ad%20insertion.md)
 - [ ] 매출 하락 최소화
 
-<h3>20 blind</h3>
+<h3>20 blind recruitment</h3>
 
 - [ ] 문자열 압축
 - [x] 괄호 변환
@@ -20,7 +20,7 @@
 - [ ] 블록 이동하기
 - [x] [가사 검색](https://github.com/evelyn82/Problem-Solving/blob/main/kakao/20%20blind/Lyrics%20search.md)
 
-<h3>19 blind</h3>
+<h3>19 blind recruitment</h3>
 
 - [ ] 오픈채팅방
 - [ ] 실패율
@@ -30,7 +30,7 @@
 - [ ] 무지의 먹방 라이브
 - [ ] 블록 게임
 
-<h3>20 intern</h3>
+<h3>20 internship</h3>
 
 - [x] 키패드 누르기
 - [ ] 수식 최대화
@@ -38,7 +38,7 @@
 - [x] 경주로 건설
 - [x] [동굴 탐험](https://github.com/evelyn82/PS/blob/main/kakao/20%20intern/Cave%20exploration.md)
 
-<h3>19 intern</h3>
+<h3>19 internship</h3>
 
 - [x] 크레인 인형뽑기 게임
 - [x] 튜플

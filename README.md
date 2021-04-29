@@ -1,4 +1,4 @@
-> [카카오 기출 바로가기](https://github.com/evelyn82/Problem-Solving/tree/main/kakao)
+> [카카오 블라인드/인턴 코딩테스트 바로가기](https://github.com/evelyn82/Problem-Solving/tree/main/kakao)
 
 <h2>Tree</h2>
 

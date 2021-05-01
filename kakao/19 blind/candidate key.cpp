@@ -7,13 +7,13 @@ using namespace std;
 
 set<string> st[8];
 map<string, int> mp[8];
-vector<int> superKey[8];
+set<int> superKey;
 void getSuperKey(int idx, vector<int> ans, int key, const vector<vector<string>>& relation){
     if(idx==relation[0].size()) return;
     
     getSuperKey(idx+1, ans, key, relation);
     
-    if(st[idx].size()==relation.size()) superKey[idx].push_back(1<<idx);
+    if(st[idx].size()==relation.size()) superKey.insert(1<<idx);
     else {
         set<int> s;
         for(int i=0;i<relation.size();++i){
@@ -21,27 +21,19 @@ void getSuperKey(int idx, vector<int> ans, int key, const vector<vector<string>>
             ans[i]=(ans[i] | (1<<num));
             s.insert(ans[i]);
         }
-        if(s.size()==relation.size()) superKey[idx].push_back(key|(1<<idx));
+        if(s.size()==relation.size()) superKey.insert(key|(1<<idx));
         else getSuperKey(idx+1, ans, key|(1<<idx), relation);
     }
 }
-int getCandidateKey(int sz){
-    set<int> candidateKey;
-    for(int c=0;c<sz;++c){
-        if(!superKey[c].size()) continue;
-        if(superKey[c].size()==1) candidateKey.insert(superKey[c][0]);
-        else{
-            sort(superKey[c].begin(), superKey[c].end());
-            for(int i=0;i<superKey[c].size();++i){
-                for(int j=i+1;j<superKey[c].size();++j){
-                    int ret=0, a=superKey[c][i], b=superKey[c][j];
-                    for(int k=0;k<8;++k){
-                        if((a&(1<<k)) && (b&(1<<k))) ret=ret|(1<<k);
-                    }candidateKey.insert(ret);
-                }
-            }
+void getCandidateKey(){
+    set<int>::iterator iter1, iter2;
+    for(iter1=superKey.begin();iter1!=superKey.end();++iter1){
+        iter2=superKey.end();
+        for(--iter2;*iter1!=*iter2;--iter2){
+            int num=*iter1 & *iter2;
+            if(num==*iter1) superKey.erase(*iter2);
         }
-    }return candidateKey.size();
+    }
 }
 int solution(vector<vector<string>> relation) {
     for(int j=0;j<relation[0].size();++j){
@@ -53,5 +45,6 @@ int solution(vector<vector<string>> relation) {
     }
     vector<int> ret(relation.size(), 0);
     getSuperKey(0, ret, 0, relation);
-    return getCandidateKey(relation[0].size());
+    getCandidateKey();
+    return superKey.size();
 }

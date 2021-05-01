@@ -24,7 +24,7 @@
 
 - [x] 오픈채팅방
 - [x] 실패율
-- [x] 후보키
+- [x] [후보키](https://github.com/evelyn82/Problem-Solving/blob/main/kakao/19%20blind/candidate%20key.md)
 - [x] [길 찾기 게임](https://github.com/evelyn82/Problem-Solving/blob/main/kakao/19%20blind/get%20directions.md)
 - [ ] 매칭 점수
 - [ ] 무지의 먹방 라이브

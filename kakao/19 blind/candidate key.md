@@ -9,7 +9,7 @@
 
 조합으로 풀 수 있다는 것을 알면서도 계속 틀린 이유는 다음과 같다.<br>
 
-<img width="800" alt="스크린샷 2021-05-01 오후 1 31 23" src="https://user-images.githubusercontent.com/54436228/116770855-8e4f5900-aa81-11eb-8520-868fc45766e1.png">
+<img width="800" alt="스크린샷 2021-05-01 오후 1 56 59" src="https://user-images.githubusercontent.com/54436228/116771296-21d65900-aa85-11eb-8a21-66d8a3741081.png">
 
 왼쪽의 입력이 주어졌을 때, 후보 키는 [a], [c, d], [b, d, e] 3개이다.<br> 
 

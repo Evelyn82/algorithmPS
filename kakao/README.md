@@ -33,7 +33,7 @@
 <h3>20 internship</h3>
 
 - [x] 키패드 누르기
-- [ ] 수식 최대화
+- [x] 수식 최대화
 - [x] 보석 쇼핑
 - [x] 경주로 건설
 - [x] [동굴 탐험](https://github.com/evelyn82/PS/blob/main/kakao/20%20intern/Cave%20exploration.md)

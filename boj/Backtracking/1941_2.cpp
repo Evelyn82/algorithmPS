@@ -5,7 +5,7 @@ using namespace std;
 
 char board[5][5];
 int dx[]={0,0,1, -1}, dy[]={1,-1, 0,0};
-bool path[33554432];
+bool path[1<<25];
 int answer;
 void backTracking(int state, int total, int scnt){
     path[state]=true;

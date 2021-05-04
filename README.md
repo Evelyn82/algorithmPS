@@ -8,7 +8,7 @@
 
 <h2>Backtracking</h2>
 
-- 1941 소문난 칠공주
+- [1941 소문난 칠공주](https://github.com/evelyn82/Problem-Solving/blob/main/boj/Backtracking/1941.md)
 
 <h2>Binary Seach</h2>
 

@@ -8,7 +8,7 @@ unordered_map<ll,ll> ump;
 
 ll findRoom(ll n){
     if(ump.find(n)==ump.end()) return n;
-    return mp[n]=findRoom(ump[n]);
+    return ump[n]=findRoom(ump[n]);
 }
 vector<long long> solution(long long k, vector<long long> room_number) {
     vector<long long> answer;

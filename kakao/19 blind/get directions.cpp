@@ -9,21 +9,18 @@ struct Node{
     int low, high; // range
     bool isRoot;
     
-    Node* parent;
     Node* leftchild;
     Node* rightchild;
     
     Node(){}
     Node(int _idx, int _x, int _y):idx(_idx), x(_x), y(_y), low(0), high(1e5), isRoot(false){
-        parent=leftchild=rightchild=NULL;
+        leftchild=rightchild=NULL;
     }
     void insert(Node* newNode){
         if(x<newNode->x){ //set rightchild
             if(rightchild) rightchild->insert(newNode);
             else {
                 rightchild=newNode;
-                newNode->parent=this;
-                
                 newNode->low=x+1;
                 newNode->high=high;
             }
@@ -32,10 +29,8 @@ struct Node{
             if(leftchild) leftchild->insert(newNode);
             else {
                 leftchild=newNode;
-                newNode->parent=this;
                 
-                if(isRoot || parent->leftchild==this) newNode->low=low;
-                else newNode->low=parent->x+1;
+                newNode->low=low;
                 newNode->high=x-1;
             }
         }
@@ -76,6 +71,7 @@ vector<vector<int>> solution(vector<vector<int>> nodeinfo) {
     vector<int> pre, post;
     preorder(tree[isRoot], pre);
     postorder(tree[isRoot], post);
+    
     vector<vector<int>> answer;
     answer.push_back(pre);
     answer.push_back(post);

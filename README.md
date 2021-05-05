@@ -12,6 +12,7 @@
 
 <h2>Binary Seach</h2>
 
+- [pgms 징검다리](https://github.com/evelyn82/Problem-Solving/blob/main/programmers/binary%20search/Stepping%20stone.md)
 - 1300 K번째 수
 - 12896 스크루지 민호
 

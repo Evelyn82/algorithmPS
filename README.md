@@ -19,3 +19,4 @@
 <h2>Two pointers</h2>
 
 - [20366 같이 눈사람 만들래?](https://github.com/evelyn82/Problem-Solving/blob/main/boj/Two%20Pointers/20366.md)
+- 3151 합이 0

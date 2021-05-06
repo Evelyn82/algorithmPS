@@ -52,7 +52,7 @@ void uninstall(int x, int y, int state){
                 if(x>1 && !board[x-2][y+1].beam) return; // 왼쪽보의 왼쪽보가 존제하는 경우
             }
         }
-        if(board[x][y+1].beam){
+        if(board[x][y+1].beam){ // 삭제하려는 기둥 위에 보가 있는 경우
             if(board[x+1][y+1].beam){
                 if(x+2<sz && !board[x+2][y+1].beam){
                      if(!board[x+1][y].pillar && !board[x+2][y].pillar) return;

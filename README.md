@@ -15,8 +15,8 @@
 - [pgms 징검다리](https://github.com/evelyn82/Problem-Solving/blob/main/programmers/binary%20search/Stepping%20stone.md)
 - 1300 K번째 수
 - 12896 스크루지 민호
-
-<h2>Two pointers</h2>
+ 
+<h2>Two pointers (sliding window)</h2>
 
 - [20366 같이 눈사람 만들래?](https://github.com/evelyn82/Problem-Solving/blob/main/boj/Two%20Pointers/20366.md)
 - [3151 합이 0](https://github.com/evelyn82/Problem-Solving/blob/main/boj/Two%20Pointers/3151.md)

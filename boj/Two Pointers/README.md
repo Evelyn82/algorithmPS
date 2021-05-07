@@ -12,8 +12,9 @@
 3. 두 지점의 합 sum이 0 보다 크다는 것은 **abs(high) > abs(low)** 이므로 high를 -- 연산한다.
 4. 두 지점의 합 sum이 0 보다 작다는 것은 **abs(low) > abs(high)** 이므로 low를 ++ 연산한다.
 
-```C
-    low=0, high=N-1;
+```C++
+    low = 0, high = v.size()-1;
+    
     while(low < high){
         int diff = v[low] + v[high];  // 1
         
@@ -32,3 +33,23 @@
 문제 : [2473 새 용액](https://www.acmicpc.net/problem/2473)
 
 위 2470번의 응용이며 한 지점 x를 기준으로 **low = x+1, high = N-1** 으로 설정하여 위 방법으로 두 지점을 찾아내면 된다.<br>
+
+***
+
+<h3>2개의 차가 M이상이면서 제일 작은 값</h3>
+
+```C++
+    low = 0, high = 0;
+    
+    while(low <= high && high < v.size()){
+        int diff = v[high]-v[low];
+        if(diff >= m){
+            answer = min(answer, diff);
+            if(answer == m) break;
+            low++;
+        }
+        else high++;
+    }
+    return answer;
+```
+

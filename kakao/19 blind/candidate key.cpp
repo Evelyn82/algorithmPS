@@ -17,7 +17,7 @@ void getSuperKey(int idx, int key, vector<string> ans, const vector<vector<strin
         uniqueCnt.insert(ans[i]);
     }
     if(uniqueCnt.size()==relation.size()) candidateKey.push_back(key|(1<<idx));
-    getSuperKey(idx+1, key|(1<<idx), ans, relation);
+    else getSuperKey(idx+1, key|(1<<idx), ans, relation);
     
 }
 void getCandidatekey(){

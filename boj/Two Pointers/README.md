@@ -36,20 +36,31 @@
 
 ***
 
-<h3>2개의 차가 M이상이면서 제일 작은 값</h3>
+<h3>2개의 차가 m이상이면서 제일 작은 값</h3>
+
+문제 : [2230 수 고르기](https://www.acmicpc.net/problem/2230)
+
+2개의 차가 m이상일떄만 정답이 될 수 있으므로 low와 high 둘다 시작점 0에서 시작한다.<br>
+
+1. 둘의 차 diff가 m보다 작을땐 high를 올려 더 큰 값을 찾는다. (diff가 m이상이 될때까지 high가 증가)
+2. diff가 m이상이라는 것은 정답이 될 수 있는 조건이 되었다는 의미이므로 answer를 update하고 low를 증가 시켜 diff를 작게 만든다. (1번 조건에서 high를 증가시키면서 diff를 크게 만들기 때문에 이 지점에선 diff를 감소시키는 방향으로 만든다.)
 
 ```C++
     low = 0, high = 0;
     
     while(low <= high && high < v.size()){
         int diff = v[high]-v[low];
-        if(diff >= m){
+        if(diff >= m){  // 2
             answer = min(answer, diff);
             if(answer == m) break;
             low++;
         }
-        else high++;
+        else high++; // 1
     }
     return answer;
 ```
+
+- while(low <= high) 는 low와 high가 같은 경우 즉, 1개의 원소값으로도 값을 처리할 수 있는 경우에 작성한다.
+- while(low < high) 는 서로 다른값으로만 처리해야하는 경우이다.
+
 

@@ -2,4 +2,4 @@
 
 > [백준 온라인 저지 + 프로그래머스](https://github.com/evelyn82/Problem-Solving/tree/main/boj)
 
-- [Two pointers (sliding window)](https://github.com/evelyn82/Problem-Solving/tree/main/boj/Two%20Pointers)
+- [Two pointers](https://github.com/evelyn82/Problem-Solving/tree/main/boj/Two%20Pointers)

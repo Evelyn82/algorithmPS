@@ -1,3 +1,8 @@
+/*
+n+m 크기의 fenwick tree로 가지고 있는 영화 n개를 idx m+1 부터 차례로 추가한 한 뒤, 보려는 영화 index 범위까지 탐색
+보려는 영화는 맨 앞에 오도록 현재 맨 앞 index - 1 로 계속 update
+*/
+
 #include <iostream>
 #include <algorithm>
 #include <vector>

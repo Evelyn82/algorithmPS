@@ -1,5 +1,3 @@
-// merge sort tree
-
 #include <iostream>
 #include <vector>
 #include <algorithm>

@@ -12,6 +12,7 @@
 
 - 3653 영화 수집
 - 2517 달리기
+- [13537 수열과 쿼리1](https://github.com/evelyn82/baekjoon-PS/blob/main/Tree/13537.md)
 
 <h3>Merge Sort tree</h3>
 

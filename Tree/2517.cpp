@@ -1,3 +1,5 @@
+// 좌표압축 후 fenwick tree
+
 #include <iostream>
 #include <vector>
 #include <algorithm>

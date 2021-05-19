@@ -7,6 +7,7 @@
 <h3>Segment tree</h3>
 
 - [6549 히스토그램에서 가장 큰 직사각형](https://github.com/evelyn82/baekjoon-PS/blob/main/Tree/6549.md)
+- 2104 부분배열 고르기
 
 <h3>Fenwick tree</h3>
 
